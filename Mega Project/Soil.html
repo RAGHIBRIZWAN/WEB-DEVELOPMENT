@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/logo2.png">
+  <title>Garden World</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .card:hover {
+      box-shadow: 1px 1px 5px rgb(85, 133, 83);
+    }
+
+    .button-hover {
+      position: relative;
+      left: 0.5;
+      bottom: -50px;
+      visibility: hidden;
+      width: 70%;
+      margin: auto;
+      font-size: 15px !important;
+      padding: 8px 10px;
+    }
+
+    .card:hover .button-hover {
+      bottom: 20px;
+      visibility: visible;
+      transition: 1s;
+    }
+    .badge-notify {
+      background: red;
+      position: relative;
+      top: -20px;
+      right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white  sticky-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand ms-1 mt-2 mt-lg-0" href="index.html">
+          <img src="images/logo2.png" width="250px" height="80" alt="Green World logo" loading="lazy" />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-bold me-4" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link text-reset dropdown-toggle hidden-arrow fw-bold me-4" href="#"
+                id="navbarDropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false">SHOP
+                PRODUCTS</a>
+              <ul class="dropdown-menu dropdown-menu-end border-0" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item link-success" href="soil.html">SOILS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item link-success" href="flowers.html">FLOWERS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item link-success" href="tools.html">GARDEN TOOLS</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link fw-bold me-4" href="purpose.html">PURPOSE</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link text-reset dropdown-toggle hidden-arrow fw-bold me-4" href="#"
+                id="navbarDropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false">LEARN AND
+                GROW</a>
+              <ul class="dropdown-menu dropdown-menu-end border-0" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item link-success" href="indoorgarden.html">INDOOR GARDEN</a>
+                </li>
+                <li>
+                  <a class="dropdown-item link-success" href="fall-care.html">FALL CARE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item link-success" href="plants.html">GROWING PLANTS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item link-success" href="receipies.html">RECIPES</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart fa-lg text-success my-cart-icon"><span
+              class="badge badge-notify my-cart-badge"></span></i>
+        </a>
+        <a class="text-reset me-3" href="map.html">
+          <i class="fa fa-map-marker fa-lg text-success"></i>
+        </a>
+
+        <!-- Avatar -->
+
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+  <!-- flowers -->
+  <!-- <div class="container mt-5 d-flex justify-content-center">
+
+    
+      <img class="img w-100" src="flowers-images/flowers.png" alt="" height="auto">
+    </div>
+
+  </div> -->
+
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide mt-3 " data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active d-flex justify-content-center">
+        <img src="images/soil-images/head.jpg" class="d-block w-75" alt="...">
+      </div>
+    </div>
+    <!-- flowers -->
+
+    <!-- cards -->
+    <div class="container-lg mt-5 p-3">
+      <div class="card-group my-3">
+        <div class="card mx-3">
+          <div class="container-sm h-50">
+            <img src="images/soil-images/s1.png" class="card-img-top img-fluid" alt="Hollywood Sign on The Hill" />
+
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title pt-3 ">Refresh Revitalizatoin Soil</h5>
+
+            <p class="card-text text-center">
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <i class="fa fa-star-half-o fa-lg text-success"></i>
+
+            </p>
+            <br>
+            <p class="text-success fs-5"> Price $11.653</p>
+          </div>
+          <button type="submit" class="btn btn-success button-hover my-cart-btn" data-id="1" data-name="product 1"
+          data-summary="summary 1" data-price="11.653" data-quantity="1"
+          data-image="images/soil-images/s1.png">Add to Cart</button>
+        </div>
+        <div class="card mx-3">
+          <div class="container-sm h-50">
+            <img src="images/soil-images/s2.png" class="card-img-top img-fluid" alt="Hollywood Sign on The Hill" />
+
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title pt-3 ">Potting Mix</h5>
+            <br>
+            <p class="card-text text-center">
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <i class='far fa-star fa-md'></i>
+              <i class='far fa-star fa-md'></i>
+              <i class='far fa-star fa-md'></i>
+            </p>
+            <br>
+            <p class="text-success fs-5"> Price $10.23</p>
+          </div>
+          <button type="submit" class="btn btn-success button-hover my-cart-btn" data-id="2" data-name="product 2"
+          data-summary="summary 2" data-price="11.653" data-quantity="1"
+          data-image="images/soil-images/s2.png">Add to Cart</button>
+        </div>
+        <div class="card mx-3">
+          <div class="container-sm h-50 ">
+            <img src="images/soil-images/s3.png" class="card-img-top img-fluid" alt="Hollywood Sign on The Hill" />
+
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title pt-3 mt-0">Moisture Control PottingMix </h5>
+            <p class="card-text text-center">
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <i class="fa fa-star-half-o fa-lg text-success"></i>
+              <i class='far fa-star fa-md'></i>
+              <i class='far fa-star fa-md'></i>
+            </p>
+            <br>
+            <p class="text-success fs-5"> Price $6.23</p>
+          </div>
+          <button type="submit" class="btn btn-success button-hover my-cart-btn" data-id="3" data-name="product 3"
+          data-summary="summary 3" data-price="11.653" data-quantity="1"
+          data-image="images/soil-images/s3.png">Add to Cart</button>
+        </div>
+        <div class="card mx-3">
+          <div class="container-sm  h-50">
+            <img src="images/soil-images/s4.png" class="card-img-top img-fluid" alt="Hollywood Sign on The Hill" />
+
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title pt-3 my-0">Orchid Potting Mix</h5>
+            <br>
+            <p class="card-text">
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <i class="fa fa-star-half-o fa-lg text-success"></i>
+              <i class='far fa-star fa-md'></i>
+              <i class='far fa-star fa-md'></i>
+            </p>
+            <br>
+            <p class="text-success fs-5"> Price $8.23</p>
+          </div>
+          <button type="submit" class="btn btn-success button-hover my-cart-btn" data-id="4" data-name="product 4"
+          data-summary="summary 4" data-price="11.653" data-quantity="1"
+          data-image="images/soil-images/s4.png">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card-group my-3">
+        <div class="card mx-3">
+          <div class="container-sm h-50">
+            <img src="images/soil-images/s5.png" class="card-img-top img-fluid" alt="Hollywood Sign on The Hill" />
+
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title pt-3 ">Seed Starting PottingMix</h5>
+            <br>
+            <p class="card-text text-center">
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <i class="fa fa-star-half-o fa-lg text-success"></i>
+
+            </p>
+            <br>
+            <p class="text-success fs-5"> Price $15.23</p>
+          </div>
+          <button type="submit" class="btn btn-success button-hover my-cart-btn" data-id="5" data-name="product 5"
+          data-summary="summary 5" data-price="11.653" data-quantity="1"
+          data-image="images/soil-images/s5.png">Add to Cart</button>
+        </div>
+        <div class="card mx-3">
+          <div class="container-sm h-50">
+            <img src="images/soil-images/s6.png" class="card-img-top img-fluid" alt="Hollywood Sign on The Hill" />
+
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title pt-3 ">Expand 'n Gro <span style="font-size: 20px;">Concentrating Planting Mix</span>
+            </h5>
+            <p class="card-text text-center">
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <i class='far fa-star fa-md'></i>
+              <i class='far fa-star fa-md'></i>
+              <i class='far fa-star fa-md'></i>
+            </p>
+            <br>
+            <p class="text-success fs-5"> Price $11.23</p>
+          </div>
+          <button type="submit" class="btn btn-success button-hover my-cart-btn" data-id="6" data-name="product 6"
+          data-summary="summary 6" data-price="11.653" data-quantity="1"
+          data-image="images/soil-images/s6.png">Add to Cart</button>
+        </div>
+        <div class="card mx-3">
+          <div class="container-sm h-50 ">
+            <img src="images/soil-images/s7.jpeg" class="card-img-top img-fluid" alt="Hollywood Sign on The Hill" />
+
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title pt-3 mt-0">Moisture Control PottingMix All Purpose Plant Food</h5>
+            <p class="card-text text-center">
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <i class="fa fa-star-half-o fa-lg text-success"></i>
+              <i class='far fa-star fa-md'></i>
+              <i class='far fa-star fa-md'></i>
+            </p>
+            <br>
+            <p class="text-success fs-5"> Price $17.73</p>
+          </div>
+          <button type="submit" class="btn btn-success button-hover my-cart-btn" data-id="7" data-name="product 7"
+          data-summary="summary 7" data-price="11.653" data-quantity="1"
+          data-image="images/soil-images/s7.jpeg">Add to Cart</button>
+        </div>
+        <div class="card mx-3">
+          <div class="container-sm  h-50">
+            <img src="images/soil-images/s8.png" class="card-img-top img-fluid" alt="Hollywood Sign on The Hill" />
+
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title pt-3 my-0">Raised Bed Soil No Mixing</h5>
+            <br>
+
+            <p class="card-text"> 
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <i class="fa fa-star-half-o fa-lg text-success"></i>
+              <i class='far fa-star fa-md'></i>
+              <i class='far fa-star fa-md'></i>
+            </p>
+            <br>
+            <p class="text-success fs-5"> Price $7.73</p>
+          </div>
+          <button type="submit" class="btn btn-success button-hover my-cart-btn" data-id="8" data-name="product 8"
+          data-summary="summary 8" data-price="11.653" data-quantity="1"
+          data-image="images/soil-images/s8.png">Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-group my-3">
+        <div class="card mx-3">
+          <div class="container-sm h-50">
+            <img src="images/soil-images/s9.png" class="card-img-top img-fluid" alt="Hollywood Sign on The Hill" />
+
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title pt-3 ">Performance orgainics</h5>
+            <br>
+            <p class="card-text text-center">
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <i class="fa fa-star-half-o fa-lg text-success"></i>
+
+            </p>
+            <br>
+            <p class="text-success fs-5"> Price $14.99</p>
+          </div>
+          <button type="submit" class="btn btn-success button-hover my-cart-btn" data-id="9" data-name="product 9"
+          data-summary="summary 9" data-price="11.653" data-quantity="1"
+          data-image="images/soil-images/s9.png">Add to Cart</button>
+        </div>
+        <div class="card mx-3">
+          <div class="container-sm h-50">
+            <img src="images/soil-images/s11.png" class="card-img-top img-fluid" alt="Hollywood Sign on The Hill" />
+
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title pt-3 ">Performance orgainics Raise Bed Mix</h5>
+            <p class="card-text text-center">
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <i class='far fa-star fa-md'></i>
+              <i class='far fa-star fa-md'></i>
+              <i class='far fa-star fa-md'></i>
+            </p>
+            <br>
+            <p class="text-success fs-5"> Price $10.56</p>
+          </div>
+          <button type="submit" class="btn btn-success button-hover my-cart-btn" data-id="10" data-name="product 10"
+          data-summary="summary 10" data-price="11.653" data-quantity="1"
+          data-image="images/soil-images/s11.png">Add to Cart</button>
+        </div>
+        <div class="card mx-3">
+          <div class="container-sm h-50 ">
+            <img src="images/soil-images/s10.png" class="card-img-top img-fluid" alt="Hollywood Sign on The Hill" />
+
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title pt-3 mt-0">Performance orgain In-Ground Soil</h5>
+
+            <p class="card-text text-center">
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <i class="fa fa-star-half-o fa-lg text-success"></i>
+              <i class='far fa-star fa-md'></i>
+              <i class='far fa-star fa-md'></i>
+            </p>
+            <br>
+            <p class="text-success fs-5"> Price $17.73</p>
+          </div>
+          <button type="submit" class="btn btn-success button-hover my-cart-btn" data-id="11" data-name="product 11"
+          data-summary="summary 11" data-price="11.653" data-quantity="1"
+          data-image="images/soil-images/s10.png">Add to Cart</button>        </div>
+        <div class="card mx-3">
+          <div class="container-sm  h-50">
+            <img src="images/soil-images/s12.png" class="card-img-top img-fluid" alt="Hollywood Sign on The Hill" />
+
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title pt-3 my-0">Indoor PottingMix</h5>
+            <br>
+            <p class="card-text p-2"> <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <span class="fa fa-star checked mt-5 fa-lg text-success"></span>
+              <i class="fa fa-star-half-o fa-lg text-success"></i>
+              <i class='far fa-star fa-md'></i>
+              <i class='far fa-star fa-md'></i>
+            </p>
+            <br>
+            <p class="text-success fs-5"> Price $8.73</p>
+          </div>
+          <button type="submit" class="btn btn-success button-hover my-cart-btn" data-id="12" data-name="product 12"
+          data-summary="summary 12" data-price="11.653" data-quantity="1"
+          data-image="images/soil-images/s12.png">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- cards -->
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-dark mt-5">
+      <!-- Grid container -->
+      <div class="container p-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+              <!-- Facebook -->
+              <a class="btn btn-outline-white bg-secondary btn-floating m-1 btn-sm" href="https://www.facebook.com/login/" role="button"><i
+                      class="fab fa-facebook-f fa-xs text-white"></i></a>
+
+
+
+              <!-- Google -->
+              <a class="btn btn-outline-white bg-secondary btn-floating m-1 btn-sm  align-items-center" href="https://www.google.com/"
+                  role="button"><i class="fab fa-google fa-xs text-white"></i></a>
+
+              <!-- Twitter -->
+              <a class="btn btn-outline-white  bg-secondary btn-floating m-1 btn-sm  align-items-center" href="https://twitter.com/"
+                  role="button"><i class="fab fa-twitter fa-xs text-white"></i></a>
+
+              <!-- Instagram -->
+              <a class="btn btn-outline-white bg-secondary btn-floating m-1 btn-sm  align-items-center" href="https://www.instagram.com"
+                  role="button"><i class="fab fa-instagram fa-xs text-white"></i></a>
+
+              <!-- Linkedin -->
+              <a class="btn btn-outline-white bg-secondary btn-floating m-1 btn-sm  align-items-center" href="https://www.linkedin.com/login"
+                  role="button"><i class="fab fa-linkedin-in fa-xs text-white"></i></a>
+
+
+          </section>
+          <!-- Section: Social media -->
+
+          <!-- Section: Form -->
+          <section class="">
+              <form action="index.html">
+                  <!--Grid row-->
+                  <div class="row d-flex justify-content-center">
+                      <!--Grid column-->
+                      <div class="col-auto">
+                          <p class="pt-2">
+                              <strong class="text-success">Sign up for our newsletter</strong>
+                          </p>
+                      </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-md-5 col-12">
+                          <!-- Email input -->
+                          <div class="form-outline needs-validation form-success border border-success border-top-0 rounded-pill mb-4"
+                              novalidate>
+
+                              <input type="email" id="email" class="form-control bg-transparent" autocomplete="off"
+                                  required="" />
+                              <label class="form-label text-success" for="email"> Email address </label>
+
+                          </div>
+                      </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-auto">
+                          <!-- Submit button -->
+                          <button class="btn btn-success" id="form-button" onclick="myfunc()" type="submit">
+                              Subscribe
+                          </button>
+                          <!-- Modal -->
+
+                      </div>
+                      <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+              </form>
+          </section>
+          <!-- Section: Form -->
+
+
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-success" href="index.html">GARDEN WORLD</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
+
+    <!-- Footer -->
+    <script>
+      $(document).ready(function () {
+        $(".nav-item").mouseover(function () {
+          $(this).css("border-bottom", "4px solid green");
+          $(this).css("color", "green");
+        });
+
+        $(".nav-item,.nav-link").mouseleave(function () {
+          $(this).css("color", "inherit")
+          $(this).css("border-bottom", "none");
+        });
+      });
+      function myfunc() {
+        var email = document.getElementById("email").value;
+        var useremail = /^[A-z0-9]{3,}@[A-z.]{7,12}$/gm;
+        var result = useremail.test(email)
+
+        if (result) {
+          text = "Thank You For Subscribing Us😊, You Will Get Proper Notification From Green World"
+        } else {
+          text = "Kindly Enter Your Email Properly"
+        }
+        alert(text);
+
+      }
+    </script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/jquery.mycart.js"></script>
+    <script type="text/javascript">
+      $(function () {
+
+        var goToCartIcon = function ($addTocartBtn) {
+          var $cartIcon = $(".my-cart-icon");
+          var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
+          $addTocartBtn.prepend($image);
+          var position = $cartIcon.position();
+          $image.animate({
+            top: position.top,
+            left: position.left
+          }, 500, "linear", function () {
+            $image.remove();
+          });
+        }
+
+        $('.my-cart-btn').myCart({
+          currencySymbol: '$',
+          classCartIcon: 'my-cart-icon',
+          classCartBadge: 'my-cart-badge',
+          classProductQuantity: 'my-product-quantity',
+          classProductRemove: 'my-product-remove',
+          classCheckoutCart: 'my-cart-checkout bg-success',
+          affixCartIcon: true,
+          showCheckoutModal: true,
+          numberOfDecimals: 2,
+          cartItems: [
+            { id: 0, name: 'product 0', summary: 'summary 0', },
+
+
+          ],
+          clickOnAddToCart: function ($addTocart) {
+            goToCartIcon($addTocart);
+          },
+          afterAddOnCart: function (products, totalPrice, totalQuantity) {
+            console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+          },
+          clickOnCartIcon: function ($cartIcon, products, totalPrice, totalQuantity) {
+            console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+          },
+          checkoutCart: function (products, totalPrice, totalQuantity) {
+            var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+            checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+            $.each(products, function () {
+              checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+            });
+            alert(checkoutString)
+            console.log("checking out", products, totalPrice, totalQuantity);
+          },
+          getDiscountPrice: function (products, totalPrice, totalQuantity) {
+            console.log("calculating discount", products, totalPrice, totalQuantity);
+            return totalPrice * 0.5;
+          }
+        });
+
+
+      });
+    </script>
+</body>
+
+</html>
