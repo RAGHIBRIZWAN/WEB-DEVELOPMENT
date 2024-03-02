@@ -1,0 +1,377 @@
+.body{
+    background-color:#330000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: #1a0000;
+}
+
+.navbar-nav .nav-item {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+#navbar-brand {
+    font-size: large;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.text-container {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4285f4;
+    color: #fff;
+    bottom: 0;
+}
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    font-weight: bold;
+}
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 100px;
+}
+button {
+    background-color: #330000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1a0000;
+}
+#navbarNavDropdown{
+    font-size: medium;
+}
+.i1{
+    font-size:48px;
+    color:#187795;
+}
+.i1:hover{
+    color: #330000;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .text-container {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #navbarNav {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #num2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #num3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #n1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    #n2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #n3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghib Rizwan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="body">
+    <div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand pe-3 me-3" id="navbar-brand" href="">Raghib Rizwan Rabani</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ps-4 ms-4" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#academics">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container pt-3" style="background-color: #00563B;" id="home">
+
+        <div class="flex-container">
+            <div id="" class="image-container">
+                <img src="Images/rgb5-removebg-preview.png" class="img-fluid w-100" alt="Front image">
+            </div>
+
+            <div id="" class="text-container mt-4">
+                <h1 style="color:#1a0000 ;">Hi, I'm <span class="highlight-text" style="color: #1a0000;" >Raghib Rizwan Rabani</span></h1>
+                <span class="h1" id="element" style="color: #1a0000;"></span>
+                <br><br><br>
+                <div class="mb-4">
+                    <a href="https://github.com/RAGHIBRIZWAN"><i class="fa fa-github pe-3 i1"></i></a>
+                    <a href="tel:+92 334 0030844"><i class="fa fa-phone pe-3 i1"></i></a>
+                    <a href="https://wa.me/03340030844"><i class="fa fa-whatsapp pe-3 i1"></i></a>
+                    <a href="mailto:raghibrizwanrabbani@gmail.com"><i class="fa fa-envelope i1"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container " style="background-color: #187795;" id="about">
+        <div class="flex-container row">
+            <h1 class="pb-3" style="text-align: center;color: #1a0000;">aBOUT</h1>
+            <div class="text-container col-6 col-md-6 col-sm-12">
+                <p style="font-size: large;color: #330000;">
+                    I am an enthusiastic programmer embarking on a journey to transform lines of code into imaginative
+                    and practical solutions. Fueled by a passion for problem-solving and a talent for bringing concepts
+                    to life, I excel in the dynamic realm of programming. Whether it involves creating refined websites,
+                    enhancing algorithms, or delving into cutting-edge technologies, I enthusiastically embrace coding
+                    challenges. I firmly believe in the transformative power of technology to bring about positive
+                    change, and I'm thrilled to contribute to shaping the digital future. Outside the realm of my code
+                    editor, you might catch me exploring emerging technologies, enjoying a cup of coffee, or envisioning
+                    my next coding escapade. Let's connect and collaboratively create something extraordinary!
+                </p>
+            </div>
+            <div class="text-container col-6 col-md-6 col-sm-12 mb-4">
+                <img src="images/C.png" alt="" style="border-radius: 100%;" width="80px" height="80px">
+                <img src="images/C++.png" alt="" style="border-radius: 100%;" width="80px" height="80px">
+                <img src="images/pyt.png" alt="" style="border-radius: 100%;" width="80px" height="80px">
+                <img src="images/HTML.png" alt="" style="border-radius: 100%;" width="80px" height="80px">
+                <img src="images/CSS.png" alt="" style="border-radius: 100%;" width="80px" height="80px">
+                <img src="images/JS.png" alt="" style="border-radius: 100%;" width="80px" height="80px">
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="container " style="background-color: #00563B;" id="service" >
+        <div class="flex-container row" >
+            <h1 class="pb-3" style="text-align: center;color: #1a0000;">sKILLS</h1>
+            <div id="num1" class="text-container pt-4 m-4 w-50 col-4 col-md-4 col-sm-12" style="background-color: #187795;">
+                <i class="fa fa-file-text" style="font-size:48px;color:#330000"></i>
+                <h1 style="color: #1a0000;">UI/UX Designer</h1>
+                <p style="font-size: x-large;color: #330000;">Crafting immersive, user-centric designs that blend creativity with functionality.</p>
+            </div>
+
+            <div id="num2" class="text-container pt-4 m-4 w-50 col-4 col-md-4 col-sm-12" style="background-color: #187795;">
+                <i class="fa fa-bug" style="font-size:48px;color:#330000"></i>
+                <h1 style="color: #1a0000;">Programmer</h1>
+                <p style="font-size: x-large;color: #330000;">Elegant coder, simplifying complexity with precision solutions.</p>
+            </div>
+
+            <div id="num3" class="text-container pt-4 m-4 w-50 col-4 col-md-4 col-sm-12" style="background-color: #187795;">
+                <i class="fa fa-code" style="font-size:48px;color:#330000"></i>
+                <h1 style="color: #1a0000;">Web Developer</h1>
+                <p style="font-size: x-large;color: #330000;">Visual storyteller, turning ideas into vibrant, compelling masterpieces</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container " style="background-color: #187795;" id="academics">
+        <div class="flex-container row" >
+            <h1 class="pb-3" style="text-align: center;color: #1a0000;">aCADEMICS</h1>
+            <div id="n1" class="text-container p-4 m-4 w-50 col-4 col-md-4 col-sm-12 col-xs-12" style="background-color: #00563B;">
+                <i class="fa fa-book" style="font-size:48px;color:#330000"></i>
+                <h1 style="color: #1a0000;">Matriculation</h1>
+                <p style="font-size: x-large;color: #330000;">I did Matriculation from Azeem Children Paradise School with a percentage of 99%</p>
+            </div>
+
+            <div id="n2" class="text-container p-4 m-4 w-50 col-4 col-md-4 col-sm-12 col-xs-12" style="background-color: #00563B;">
+                <i class="fa fa-university" style="font-size:48px;color:#330000"></i>
+                <h1 style="color: #1a0000;">Intermediate</h1>
+                <p style="font-size: x-large;color: #330000;">I did Intermediate from Adamjee Government Science College with a percentage of 78.6%</p>
+            </div>
+
+            <div id="n3" class="text-container p-4 m-4 w-50 col-4 col-md-4 col-sm-12 col-xs-12" style="background-color: #00563B;">
+                <i class="fa fa-graduation-cap" style="font-size:48px;color:#330000"></i>
+                <h1 style="color: #1a0000;">Bachelors</h1>
+                <p style="font-size: x-large;color: #330000;">Currently studying in FAST NUCES Karachi, In the department of Artificial Intelligence</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container " style="background-color: #00563B;" id="contact">
+    
+        <div class="row">
+            <h1 class="pt-4 pb-4" style="text-align: center;color: #1a0000;">cONTACT</h1>
+    
+            <div class="col-md-4 mb-4">
+                <div style="display: flex;flex-direction: row;">
+                    <h3 class="me-4" style="color: #1a0000;">By Phone</h3>
+                    <a href="tel:+92 334 0030844"><i class="fa fa-phone" style="font-size:36px;color:#187795 ;"></i></a>
+                </div>
+                <br>
+                <a href="tel:+92 334 0030844" style="text-decoration: none;"><h3 style="color: #330000;">+92 334 0030844</h3></a>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div style="display: flex;flex-direction: row;">
+                    <h3 class="me-4" style="color: #1a0000;">By Email</h3>
+                    <a href="mailto:raghibrizwanrabbani@gmail.com"><i class="fa fa-envelope" style="font-size:32px;color:#187795"></i></a>
+                </div>
+                <br>
+                <a href="mailto:raghibrizwanrabbani@gmail.com" style="text-decoration: none;"><h3 style="color: #330000;">raghibrizwanrabbani@gmail.com</h3></a>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div style="display: flex;flex-direction: row;">
+                    <h3 class="me-4" style="color: #1a0000;">By Whatsapp</h3>
+                    <a href="https://wa.me/03340030844"><i class="fa fa-whatsapp" style="font-size:38px;color:#187795"></i></a>
+                </div>
+                <br>
+                <a href="https://wa.me/03340030844" style="text-decoration: none;"><h3 style="color: #330000;">+92 334 0030844</h3></a>
+            </div>
+        </div>
+    </section>
+
+    <form id="whatsappForm" class="mt-4 mb-4" style="background-color: #187795;">
+        <label for="name" style="color: #1a0000;">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <!-- <label for="phone">Your Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br> -->
+        
+        <label for="message" style="color: #1a0000;">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <button type="button" id="sendWhatsApp">Send Message on WhatsApp</button>
+    </form>
+
+    <footer style="background-color: #1a0000;">
+        &copy; 2024 Raghib Rizwan Rabani
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'UI/UX Designer','Programmer'],
+            typeSpeed: 100,
+        });
+
+        document.getElementById("sendWhatsApp").addEventListener("click", function() {
+    var name = document.getElementById("name").value;
+    // var phone = document.getElementById("phone").value;
+    var message = document.getElementById("message").value;
+    
+    
+    // Generate WhatsApp link
+    var whatsappLink = "https://wa.me/" + 3340030844 + "?text=" + encodeURIComponent("Name: " + name + "\nMessage: " + message);
+    
+    // Redirect user to WhatsApp
+    window.location.href = whatsappLink;
+        });
+    </script>
+</body>
+
+</html>
