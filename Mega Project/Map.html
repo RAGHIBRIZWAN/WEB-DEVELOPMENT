@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo2.png">
+    <title>Garden World</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <style>
+        * {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white  sticky-top">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+    
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand ms-1 mt-2 mt-lg-0" href="index.html">
+              <img src="images/logo2.png" width="250px" height="80" alt="Green World logo" loading="lazy" />
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-bold me-4" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a class="nav-link text-reset dropdown-toggle hidden-arrow fw-bold me-4" href="#"
+                    id="navbarDropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false">SHOP
+                    PRODUCTS</a>
+                  <ul class="dropdown-menu dropdown-menu-end border-0" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item link-success" href="soil.html">SOILS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item link-success" href="flowers.html">FLOWERS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item link-success" href="tools.html">GARDEN TOOLS</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+    
+    
+              <li class="nav-item">
+                <a class="nav-link fw-bold me-4" href="purpose.html">PURPOSE</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a class="nav-link text-reset dropdown-toggle hidden-arrow fw-bold me-4" href="#"
+                    id="navbarDropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false">LEARN AND
+                    GROW</a>
+                  <ul class="dropdown-menu dropdown-menu-end border-0" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item link-success" href="indoorgarden.html">INDOOR GARDEN</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item link-success" href="fall-care.html">FALL CARE</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item link-success" href="plants.html">GROWING PLANTS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item link-success" href="receipies.html">RECIPES</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+    
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+    
+          <!-- Right elements -->
+          <div class="d-flex align-items-center">
+            <!-- Icon -->
+            <a class="text-reset me-3" href="#">
+              <i class="fas fa-shopping-cart fa-lg text-success"></i>
+            </a>
+            <a class="text-reset me-3" href="map.html">
+              <i class="fa fa-map-marker fa-lg text-success"></i>
+            </a>
+    
+            <!-- Avatar -->
+    
+          </div>
+          <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+    <!-- Navbar -->
+
+    <!-- geolocation -->
+    <div class="container mt-5 d-flex justify-content-center">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7236.278890228164!2d67.02871637342702!3d24.927319091051967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1671549688758!5m2!1sen!2s"
+            width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <!-- geolocation -->
+    <div class="container-sm p-3 my-4 rounded border border-1 border-success shadow-sm">
+        <form action="map.html">
+
+            <div class="row  row-cols-lg-auto g-3 align-items-center">
+
+                <div class="col-12  p-3">
+
+                    <h3 class="display-5 fs-2">Send Us a Message</h3>
+
+                    <br>
+                    <hr class="text-success">
+                </div>
+
+            </div>
+            <div class="form-outline needs-validation text-success mt-4" novalidate>
+                <div class="row  row-cols-lg-auto g-3 align-items-center">
+
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  p-3">
+                        <h4 class="display-5 fs-5 text-secondary">Personal Info</h4>
+                        <label for="fname" class="my-2">Fullname *</label>
+                        <input type="text" id="fname" class="form-control border" autocomplete="off" minlength="3"
+                            required="">
+                    </div>
+                </div>
+                <div class="row  row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  p-3">
+                        <label for="email" class="my-2">Email Address *</label>
+                        <input type="email" id="sender-email" class="form-control border" autocomplete="off"
+                            required="">
+                    </div>
+                </div>
+                <div class="row  row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  p-3">
+                        <label for="num" class="my-2">Phone Number *</label>
+                        <input type="tel" id="num" class="form-control border" autocomplete="off" required="">
+                    </div>
+                </div>
+                <div class="row  row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3">
+                        <h4 class="display-5 fs-5 text-secondary my-3">Message</h4>
+                        <label for="num" class="my-2">Subject *</label>
+                        <div class="input-group ">
+                            <label class="input-group-text" for="inputGroupSelect01">Enquiry about</label>
+                            <select class="form-select border-0" id="inputGroupSelect01" required="" autocomplete="off">
+
+                                <option selected>General or Product Enquiry</option>
+                                <option value="2">Request a Plant</option>
+                                <option value="3">Commercial Quotes</option>
+                                <option value="3">Enquire about our $165 Garden Consultations</option>
+                                <option value="4">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row  row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  p-3">
+                        <label for="num" class="my-2">Message *</label>
+                        <textarea class="form-control border " id="textArea" rows="4" minlength="12" autocomplete="off"
+                            required=""></textarea>
+                    </div>
+                </div>
+
+                <div class="row  row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12  p-3 text-center">
+
+
+                        <button class="btn btn-success fs-5 mt-3" onclick="getanswer()" type="submit">submit</button>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-dark mt-5">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-white bg-secondary btn-floating m-1 btn-sm" href="https://www.facebook.com/login/" role="button"><i
+                        class="fab fa-facebook-f fa-xs text-white"></i></a>
+
+
+
+                <!-- Google -->
+                <a class="btn btn-outline-white bg-secondary btn-floating m-1 btn-sm  align-items-center" href="https://www.google.com/"
+                    role="button"><i class="fab fa-google fa-xs text-white"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-white  bg-secondary btn-floating m-1 btn-sm  align-items-center" href="https://twitter.com/"
+                    role="button"><i class="fab fa-twitter fa-xs text-white"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-white bg-secondary btn-floating m-1 btn-sm  align-items-center" href="https://www.instagram.com"
+                    role="button"><i class="fab fa-instagram fa-xs text-white"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-white bg-secondary btn-floating m-1 btn-sm  align-items-center" href="https://www.linkedin.com/login"
+                    role="button"><i class="fab fa-linkedin-in fa-xs text-white"></i></a>
+
+
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section class="">
+                <form action="index.html">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong class="text-success">Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline needs-validation form-success border border-success border-top-0 rounded-pill mb-4"
+                                novalidate>
+
+                                <input type="email" id="email" class="form-control bg-transparent" autocomplete="off"
+                                    required="" />
+                                <label class="form-label text-success" for="email"> Email address </label>
+
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button class="btn btn-success" id="form-button" onclick="myfunc()" type="submit">
+                                Subscribe
+                            </button>
+                            <!-- Modal -->
+
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-success" href="index.html">GARDEN WORLD</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Footer -->
+    <script>
+        $(document).ready(function () {
+            $(".nav-item").mouseover(function () {
+                $(this).css("border-bottom", "4px solid green");
+                $(this).css("color", "green");
+            });
+
+            $(".nav-item,.nav-link").mouseleave(function () {
+                $(this).css("color", "inherit")
+                $(this).css("border-bottom", "none");
+            });
+        });
+        function myfunc() {
+            var email = document.getElementById("email").value;
+            var useremail = /^[A-z0-9]{3,}@[A-z.]{7,12}$/gm;
+            var result = useremail.test(email)
+
+            if (result) {
+                text = "Thank You For Subscribing Us😊, You Will Get Proper Notification From Green World"
+            } else {
+                text = "Kindly Enter Your Email Properly"
+            }
+            alert(text);
+
+        }
+        function getanswer() {
+            var senderemail = document.getElementById("sender-email").value;
+            var emailaddress = /^[A-z0-9]{3,}@[A-z.]{7,12}$/gm;
+            var result1 = emailaddress.test(senderemail);
+            var phonenumber = document.getElementById("num").value;
+            var telcode = /^[+0-9]{4,6}-[0-9]{7}$/gm;
+            var result2 = telcode.test(phonenumber);
+            var enquiry= document.getElementById("inputGroupSelect01").value;
+            var message= document.getElementById("textArea").value;
+            if (enquiry, result1, result2, message ) {
+                show = "we will response you shortly"
+            } else {
+                show = "Kindly Fill the Form Properly"
+            }
+            alert(show);
+
+        }
+
+
+    </script>
+</body>
+
+</html>
